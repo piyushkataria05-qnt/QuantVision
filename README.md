@@ -19,48 +19,20 @@ QuantVision is an event-driven, multi-threaded quantitative trading terminal bui
 
 1. **Clone the Repository:**
    ```bash
-   git clone [https://github.com/YOUR_USERNAME/QuantVision.git](https://github.com/YOUR_USERNAME/QuantVision.git)
+   git clone [https://github.com/piyushkataria05-qnt/QuantVision.git](https://github.com/piyushkataria05-qnt/QuantVision.git)
    cd QuantVision
 Install Required Libraries:
 
 Bash
 pip install -r requirements.txt
 Configure Environment Parameters:
-Create a .env file in the root root folder:
+Create a .env file in the root folder of the project:
 
 Code snippet
 TELEGRAM_BOT_TOKEN=your_token_here
 TELEGRAM_CHAT_ID=your_chat_id_here
 Execution:
-Ensure your MT5 desktop terminal is logged into a broker account, check "Allow Algo Trading", then run:
+Ensure your MT5 desktop terminal is logged into a broker account, enable "Allow Algo Trading" in your terminal settings, then run:
 
 Bash
 python app.py
-
----
-
-## 🚀 Step 5: Push to GitHub via Terminal
-
-1. Go to [GitHub](https://github.com/), log in, click the **"+"** icon in the top right, and select **New repository**.
-2. Name your repository `QuantVision` (or whatever you prefer), leave it as **Public**, do **NOT** check "Add a README" (since we already made one), and click **Create repository**.
-3. Open your project terminal on your computer and run these commands sequentially to upload your workspace:
-
-```bash
-# Initialize an empty git tracker in your local folder
-git init
-
-# Stage all files (except the ones listed in your .gitignore)
-git add .
-
-# Save a snapshot of your files locally
-git commit -m "feat: Initial commit of multithreaded quantitative dashboard architecture"
-
-# Point your local Git branch to the main branch
-git branch -M main
-
-# Link your local folder to your newly created GitHub online repository 
-# (Copy this exact line directly from the GitHub setup page instructions)
-git remote add origin https://github.com/YOUR_USERNAME/QuantVision.git
-
-# Push the code live to the web!
-git push -u origin main
