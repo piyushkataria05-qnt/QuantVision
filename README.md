@@ -22,19 +22,20 @@ QuantVision is an event-driven, multi-threaded quantitative trading terminal bui
    git clone [https://github.com/piyushkataria05-qnt/QuantVision.git](https://github.com/piyushkataria05-qnt/QuantVision.git)
    cd QuantVision
    
-2.**Install Required Libraries:**
+2. **Install Required Libraries:**
    ```bash
-   pip install -r requirements.txt'''
+   pip install -r requirements.txt
  
-3.**Configure Environment Parameters:**
+3. **Configure Environment Parameters:**
    Create a .env file in the root folder of the project:
 
    Code snippet
-   ```TELEGRAM_BOT_TOKEN=your_token_here
-      TELEGRAM_CHAT_ID=your_chat_id_here'''
+   ```bash
+   TELEGRAM_BOT_TOKEN=your_token_here
+   TELEGRAM_CHAT_ID=your_chat_id_here
+   
+4. **Execution:**
+   Ensure your MT5 desktop terminal is logged into a broker account, enable "Allow Algo Trading" in your terminal settings, then run:
 
-Execution:
-Ensure your MT5 desktop terminal is logged into a broker account, enable "Allow Algo Trading" in your terminal settings, then run:
-
-```bash
-python app.py'''
+   ```bash
+   python app.py'''
