@@ -7,9 +7,9 @@ import MetaTrader5 as mt5
 from dotenv import load_dotenv
 
 load_dotenv()
-TELEGRAM_BOT_TOKEN = "8621402220:AAFolpupEIOj24CByIOunB9Y_gmx_YWj8Yc"
-TELEGRAM_CHAT_ID = "1210174791"
-SYMBOL = "BTCUSD"
+TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
+SYMBOL = "XAUUSD"
 TIMEFRAME = mt5.TIMEFRAME_M1  # Explicitly set to 1-Minute Timeframe
 
 # Anti-Spam Tracking State
